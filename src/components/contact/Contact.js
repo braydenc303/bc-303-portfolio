@@ -1,17 +1,43 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const Wrapper = styled.div`
 
+const Wrapper = styled.div`
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+`
+
+const Image = styled.img`
+    height: 100px;
+`
+
+const Spacer = styled.div`
+    height: 50px;
+`
+
+const Heading = styled.h2`
+    font-size: 1.5rem;
+    font-weight: bold;
 `
 
 class Contact extends Component {
 
     render() {
         return (
-            <Wrapper>
-
-            </Wrapper>
+            <>
+                <Spacer id="Contact"></Spacer>
+                <Heading>Contact</Heading>
+                <Spacer></Spacer>
+                <Wrapper>
+                    <a href="https://github.com/braydenc303" target="top"><Image src="./assets/img/GitHub-Mark-120px-plus.png" alt="github logo" /></a> 
+                    <a className="LI-simple-link" href='https://www.linkedin.com/in/brayden-copley-9bb0b35?trk=profile-badge'><Image src="./assets/img/linkedin.png" alt="LinkedIn Logo"></Image></a>
+                    <a href="mailto:braydenc303@gmail.com"><Image src="./assets/img/email-icon-2.jpg" alt="email logo"/></a>
+                </Wrapper>
+            </>
         );
     }
 }
