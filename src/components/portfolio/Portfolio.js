@@ -133,10 +133,10 @@ class Portfolio extends Component {
                 <Container>
                     <Stage className="ul">
                         <Scene className="li">
-                            <Project className="Movie" onClick="">
-                                <Cover className="Poster" onClick=""></Cover>
+                            <Project className="Movie" onClick="void(0)">
+                                <Cover className="Poster" onClick="void(0)"></Cover>
                                 <a href="https://github.com/braydenc303/GitTutorial" target="top">
-                                    <Info onClick="">
+                                    <Info onClick="void(0)">
                                         <header>
                                             <h2>GitTutorial</h2>
                                             <h2>Personal Project</h2>
@@ -149,10 +149,10 @@ class Portfolio extends Component {
                             </Project>
                         </Scene>
                         <Scene className="li">
-                            <Project className="Movie" onClick="">
-                                <Cover className="Poster" onClick=""></Cover>
+                            <Project className="Movie" onClick="void(0)">
+                                <Cover className="Poster" onClick="void(0)"></Cover>
                                 <a href="https://braydenc303.github.io/triviaGame/" target="top">
-                                    <Info onClick="">
+                                    <Info onClick="void(0)">
                                         <header>
                                             <h2>TED Trivia</h2>
                                             <h2>Class Assignment</h2>
@@ -164,10 +164,10 @@ class Portfolio extends Component {
                             </Project>
                         </Scene>
                         <Scene className="li">
-                            <Project className="Movie" onClick="">
-                                <Cover className="Poster" onClick=""></Cover>
+                            <Project className="Movie" onClick="void(0)">
+                                <Cover className="Poster" onClick="void(0)"></Cover>
                                 <a href="https://memembo.herokuapp.com/" target="top">
-                                    <Info onClick="">
+                                    <Info onClick="void(0)">
                                         <header>
                                             <h2>M&#477;&#8901;mem&#8901;bo&#772;</h2>
                                             <h2>Group Project</h2>
