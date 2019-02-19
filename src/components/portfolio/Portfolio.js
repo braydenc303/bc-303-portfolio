@@ -27,12 +27,19 @@ const Info = styled.div`
     width: 260px;
     height: 400px;
     background-color: #fff;
+    -ms-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     -ms-transform: rotateY(90deg) translateZ(130px);
     -webkit-transform: rotateY(90deg) translateZ(130px);
+    -moz-transform: rotateY(90deg) translateZ(130px);
     transform: rotateY(90deg) translateZ(130px);
     border: 1px solid #B8B5B5;
     font-size: 0.75em;
+    -ms-transition: box-shadow 450ms;
+    -webkit-transition: box-shadow 450ms;
+    -moz-transition: box-shadow 450ms;
     transition: box-shadow 450ms;
     box-shadow: inset -300px 0px 40px rgba(0,0,0,0.5);
     :hover {
@@ -46,19 +53,28 @@ const Info = styled.div`
 const Project = styled.div`
     width: 260px;
     height: 400px;
+    -ms-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -ms-transform: translateZ(-130px);
     -webkit-transform: translateZ(-130px);
+    -moz-transform: translateZ(-130px);
     transform: translateZ(-130px);
+    -ms-transition: transform 500ms;
+    -webkit-transition: transform 500ms;
+    -moz-transition: transform 500ms;
     transition: transform 500ms;
     :hover {
         -ms-transform: rotateY(-78deg)translateZ(20px);
         -webkit-transform: rotateY(-78deg)translateZ(20px);
+        -moz-transform: rotateY(-78deg)translateZ(20px);
         transform: rotateY(-78deg)translateZ(20px);
     }
     :focus {
         -ms-transform: rotateY(-78deg)translateZ(20px);
         -webkit-transform: rotateY(-78deg)translateZ(20px);
+        -moz-transform: rotateY(-78deg)translateZ(20px);
         transform: rotateY(-78deg)translateZ(20px);
     }
     ::after {
@@ -71,7 +87,11 @@ const Project = styled.div`
         transform-origin: 100% 100%;
         -ms-transform: rotateX(90deg) translateX(-130px) translateY(130px);
         -webkit-transform: rotateX(90deg) translateX(-130px) translateY(130px);
+        -moz-transform: rotateX(90deg) translateX(-130px) translateY(130px);
         transform: rotateX(90deg) translateX(-130px) translateY(130px);
+        -ms-transition: box-shadow 500ms;
+        -webkit-transition: box-shadow 500ms;
+        -moz-transition: box-shadow 500ms;
         transition: box-shadow 500ms;
     }
     :hover::after {
@@ -87,12 +107,19 @@ const Cover = styled.div`
     width: 260px;
     height: 400px;
     background-color: #fff;
+    -ms-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     -ms-transform: translateZ(130px);
     -webkit-transform: translateZ(130px);
+    -moz-transform: translateZ(130px);
     transform: translateZ(130px);
     background-size: cover;
     background-repeat: no-repeat;
+    -ms-transition: box-shadow 500ms;
+    -webkit-transition: box-shadow 500ms;
+    -moz-transition: box-shadow 500ms;
     transition: box-shadow 500ms;
     box-shadow: inset 0px 0px 40px rgba(255,255,255,0);
     :hover {
@@ -132,11 +159,11 @@ class Portfolio extends Component {
                 <h2>Portfolio</h2>
                 <Container>
                     <Stage className="ul">
-                        <Scene className="li" onclick="void(0)">
-                            <Project className="Movie" onclick="void(0)">
-                                <Cover className="Poster" onclick="void(0)"></Cover>
+                        <Scene className="li">
+                            <Project className="Movie" onclick="return true">
+                                <Cover className="Poster"></Cover>
                                 <a href="https://github.com/braydenc303/GitTutorial" target="top">
-                                    <Info onclick="void(0)">
+                                    <Info>
                                         <header>
                                             <h2>GitTutorial</h2>
                                             <h2>Personal Project</h2>
@@ -148,11 +175,11 @@ class Portfolio extends Component {
                                 </a>
                             </Project>
                         </Scene>
-                        <Scene className="li" onclick="void(0)">
-                            <Project className="Movie" onclick="void(0)">
-                                <Cover className="Poster" onclick="void(0)"></Cover>
+                        <Scene className="li">
+                            <Project className="Movie" onclick="return true">
+                                <Cover className="Poster"></Cover>
                                 <a href="https://braydenc303.github.io/triviaGame/" target="top">
-                                    <Info onclick="void(0)">
+                                    <Info>
                                         <header>
                                             <h2>TED Trivia</h2>
                                             <h2>Class Assignment</h2>
@@ -163,11 +190,11 @@ class Portfolio extends Component {
                                 </a>
                             </Project>
                         </Scene>
-                        <Scene className="li" onclick="void(0)">
-                            <Project className="Movie" onclick="void(0)">
-                                <Cover className="Poster" onclick="void(0)"></Cover>
+                        <Scene className="li">
+                            <Project className="Movie" onclick="return true">
+                                <Cover className="Poster"></Cover>
                                 <a href="https://memembo.herokuapp.com/" target="top">
-                                    <Info onclick="void(0)">
+                                    <Info>
                                         <header>
                                             <h2>M&#477;&#8901;mem&#8901;bo&#772;</h2>
                                             <h2>Group Project</h2>
