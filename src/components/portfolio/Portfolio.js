@@ -133,10 +133,10 @@ class Portfolio extends Component {
                 <Container>
                     <Stage className="ul">
                         <Scene className="li">
-                            <Project className="Movie">
-                                <Cover className="Poster"></Cover>
+                            <Project className="Movie" onClick="">
+                                <Cover className="Poster" onClick=""></Cover>
                                 <a href="https://github.com/braydenc303/GitTutorial" target="top">
-                                    <Info>
+                                    <Info onClick="">
                                         <header>
                                             <h2>GitTutorial</h2>
                                             <h2>Personal Project</h2>
@@ -149,26 +149,25 @@ class Portfolio extends Component {
                             </Project>
                         </Scene>
                         <Scene className="li">
-                            <Project className="Movie">
-                                <Cover className="Poster"></Cover>
+                            <Project className="Movie" onClick="">
+                                <Cover className="Poster" onClick=""></Cover>
                                 <a href="https://braydenc303.github.io/triviaGame/" target="top">
-                                    <Info>
+                                    <Info onClick="">
                                         <header>
                                             <h2>TED Trivia</h2>
                                             <h2>Class Assignment</h2>
                                             <h3>Purpose: Entertainment/Education</h3>
                                         </header>
-                                        <p>In order to learn about event timeouts and timers, we were required to create a trivia game. We were able to choose our own theme, so I chose TED talks. I had a lot of fun on this project, and learned quite a bit.</p>
+                                        <p>In order to learn about event timeouts and timers, I created a trivia game. I chose TED talks for my theme. I had a lot of fun on this project, and learned quite a bit.</p>
                                     </Info>
                                 </a>
                             </Project>
                         </Scene>
                         <Scene className="li">
-                            <Project className="Movie">
-                                <Cover className="Poster"></Cover>
-                                
+                            <Project className="Movie" onClick="">
+                                <Cover className="Poster" onClick=""></Cover>
                                 <a href="https://memembo.herokuapp.com/" target="top">
-                                    <Info>
+                                    <Info onClick="">
                                         <header>
                                             <h2>M&#477;&#8901;mem&#8901;bo&#772;</h2>
                                             <h2>Group Project</h2>
