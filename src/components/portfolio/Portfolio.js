@@ -160,7 +160,7 @@ class Portfolio extends Component {
                 <Container>
                     <Stage className="ul">
                         <Scene className="li">
-                            <Project className="Movie" onclick="return true">
+                            <Project className="Movie" onClick={void(0)}>
                                 <Cover className="Poster"></Cover>
                                 <a href="https://github.com/braydenc303/GitTutorial" target="top">
                                     <Info>
@@ -176,7 +176,7 @@ class Portfolio extends Component {
                             </Project>
                         </Scene>
                         <Scene className="li">
-                            <Project className="Movie" onclick="return true">
+                            <Project className="Movie" onClick={void(0)}>
                                 <Cover className="Poster"></Cover>
                                 <a href="https://braydenc303.github.io/triviaGame/" target="top">
                                     <Info>
@@ -191,7 +191,7 @@ class Portfolio extends Component {
                             </Project>
                         </Scene>
                         <Scene className="li">
-                            <Project className="Movie" onclick="return true">
+                            <Project className="Movie" onClick={void(0)}>
                                 <Cover className="Poster"></Cover>
                                 <a href="https://memembo.herokuapp.com/" target="top">
                                     <Info>
