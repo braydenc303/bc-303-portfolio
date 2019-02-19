@@ -28,6 +28,8 @@ const Info = styled.div`
     height: 400px;
     background-color: #fff;
     backface-visibility: hidden;
+    -ms-transform: rotateY(90deg) translateZ(130px);
+    -webkit-transform: rotateY(90deg) translateZ(130px);
     transform: rotateY(90deg) translateZ(130px);
     border: 1px solid #B8B5B5;
     font-size: 0.75em;
@@ -42,9 +44,13 @@ const Project = styled.div`
     width: 260px;
     height: 400px;
     transform-style: preserve-3d;
+    -ms-transform: translateZ(-130px);
+    -webkit-transform: translateZ(-130px);
     transform: translateZ(-130px);
     transition: transform 500ms;
     :hover {
+        -ms-transform: rotateY(-78deg)translateZ(20px);
+        -webkit-transform: rotateY(-78deg)translateZ(20px);
         transform: rotateY(-78deg)translateZ(20px);
     }
     ::after {
@@ -55,6 +61,8 @@ const Project = styled.div`
         bottom: 0;
         box-shadow: 0 50px 50px rgba(0,0,0,0.3);
         transform-origin: 100% 100%;
+        -ms-transform: rotateX(90deg) translateX(-130px) translateY(130px);
+        -webkit-transform: rotateX(90deg) translateX(-130px) translateY(130px);
         transform: rotateX(90deg) translateX(-130px) translateY(130px);
         transition: box-shadow 500ms;
     }
@@ -69,6 +77,8 @@ const Cover = styled.div`
     height: 400px;
     background-color: #fff;
     backface-visibility: hidden;
+    -ms-transform: translateZ(130px);
+    -webkit-transform: translateZ(130px);
     transform: translateZ(130px);
     background-size: cover;
     background-repeat: no-repeat;
