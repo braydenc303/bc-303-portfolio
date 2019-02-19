@@ -158,53 +158,53 @@ class Portfolio extends Component {
                 <Spacer></Spacer>
                 <h2>Portfolio</h2>
                 <Container>
-                    <Stage className="ul">
-                        <Scene className="li">
-                            <Project className="Movie" onFocus={void(0)}>
-                                <Cover className="Poster"></Cover>
-                                <a href="https://github.com/braydenc303/GitTutorial" target="top">
-                                    <Info>
-                                        <header>
-                                            <h2>GitTutorial</h2>
-                                            <h2>Personal Project</h2>
-                                            <h3>Purpose: Education</h3>
-                                        </header>
-                                        <p>Merge conflicts on purpose: A Tutorial, and Best Practices For Git Workflow.</p> 
-                                        <p>This project sprung out of the need for a quick tutorial for my bootcamp. Though we touched on git we did not cover a group workflow, which made working on our group projects quite difficult. I looked at a few tutorials and built one as a readme file that anyone could download and walk through in their favorite code editor.</p>
-                                    </Info>
-                                </a>
-                            </Project>
+                    <Stage>
+                        <Scene>
+                            <a href="https://github.com/braydenc303/GitTutorial" target="top">
+                                <Project>
+                                    <Cover></Cover>
+                                        <Info>
+                                            <header>
+                                                <h2>GitTutorial</h2>
+                                                <h2>Personal Project</h2>
+                                                <h3>Purpose: Education</h3>
+                                            </header>
+                                            <p>Merge conflicts on purpose: A Tutorial, and Best Practices For Git Workflow.</p> 
+                                            <p>This project sprung out of the need for a quick tutorial for my bootcamp. Though we touched on git we did not cover a group workflow, which made working on our group projects quite difficult. I looked at a few tutorials and built one as a readme file that anyone could download and walk through in their favorite code editor.</p>
+                                        </Info>
+                                </Project>
+                            </a>
                         </Scene>
-                        <Scene className="li">
-                            <Project className="Movie" onFocus={void(0)}>
-                                <Cover className="Poster"></Cover>
-                                <a href="https://braydenc303.github.io/triviaGame/" target="top">
-                                    <Info>
-                                        <header>
-                                            <h2>TED Trivia</h2>
-                                            <h2>Class Assignment</h2>
-                                            <h3>Purpose: Entertainment/Education</h3>
-                                        </header>
-                                        <p>In order to learn about event timeouts and timers, I created a trivia game. I chose TED talks for my theme. I had a lot of fun on this project, and learned quite a bit.</p>
-                                    </Info>
-                                </a>
-                            </Project>
+                        <Scene>
+                            <a href="https://braydenc303.github.io/triviaGame/" target="top">
+                                <Project>
+                                    <Cover></Cover>
+                                        <Info>
+                                            <header>
+                                                <h2>TED Trivia</h2>
+                                                <h2>Class Assignment</h2>
+                                                <h3>Purpose: Entertainment/Education</h3>
+                                            </header>
+                                            <p>In order to learn about event timeouts and timers, I created a trivia game. I chose TED talks for my theme. I had a lot of fun on this project, and learned quite a bit.</p>
+                                        </Info>
+                                </Project>
+                            </a>
                         </Scene>
-                        <Scene className="li">
-                            <Project className="Movie" onFocus={void(0)}>
-                                <Cover className="Poster"></Cover>
-                                <a href="https://memembo.herokuapp.com/" target="top">
-                                    <Info>
-                                        <header>
-                                            <h2>M&#477;&#8901;mem&#8901;bo&#772;</h2>
-                                            <h2>Group Project</h2>
-                                            <h3>Purpose: Education</h3>
-                                            <h3>In Progress</h3>
-                                        </header>
-                                        <p>Having just been through a fast paced learning experience ourselves, my teammates and I wanted to create something that could help people learn any new skill. We created a build your own quiz game, that has three different sets of rules depending on how well you know the material, and all completely customizable.</p>
-                                    </Info>
-                                </a>
-                            </Project>
+                        <Scene>
+                            <a href="https://memembo.herokuapp.com/" target="top">
+                                <Project>
+                                    <Cover></Cover>
+                                        <Info>
+                                            <header>
+                                                <h2>M&#477;&#8901;mem&#8901;bo&#772;</h2>
+                                                <h2>Group Project</h2>
+                                                <h3>Purpose: Education</h3>
+                                                <h3>In Progress</h3>
+                                            </header>
+                                            <p>Having just been through a fast paced learning experience ourselves, my teammates and I wanted to create something that could help people learn any new skill. We created a build your own quiz game, that has three different sets of rules depending on how well you know the material, and all completely customizable.</p>
+                                        </Info>
+                                </Project>
+                            </a>
                         </Scene>
                     </Stage>
                 </Container>
