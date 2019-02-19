@@ -16,10 +16,6 @@ const Spacer = styled.div`
     height: 50px;
 `
 
-const Heading = styled.h2`
-    font-size: 1.5rem;
-    font-weight: bold;
-`
 
 class Skills extends Component {
 
@@ -28,7 +24,7 @@ class Skills extends Component {
         return(
             <div id="Skills">
                 <Spacer></Spacer>
-                <Heading>Skills</Heading>
+                <h2>Skills</h2>
                 <UList>
                     <ListI>HTML</ListI>
                     <ListI>CSS</ListI>
