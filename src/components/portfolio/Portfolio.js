@@ -38,6 +38,9 @@ const Info = styled.div`
     :hover {
         box-shadow: inset 0px 0px 40px rgba(0,0,0,0);
     }
+    :focus {
+        box-shadow: inset 0px 0px 40px rgba(0,0,0,0);
+    }
 `
 
 const Project = styled.div`
@@ -49,6 +52,11 @@ const Project = styled.div`
     transform: translateZ(-130px);
     transition: transform 500ms;
     :hover {
+        -ms-transform: rotateY(-78deg)translateZ(20px);
+        -webkit-transform: rotateY(-78deg)translateZ(20px);
+        transform: rotateY(-78deg)translateZ(20px);
+    }
+    :focus {
         -ms-transform: rotateY(-78deg)translateZ(20px);
         -webkit-transform: rotateY(-78deg)translateZ(20px);
         transform: rotateY(-78deg)translateZ(20px);
@@ -69,6 +77,9 @@ const Project = styled.div`
     :hover::after {
         box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
     }
+    :focus::after {
+        box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
+    }
 `
 
 const Cover = styled.div`
@@ -85,6 +96,9 @@ const Cover = styled.div`
     transition: box-shadow 500ms;
     box-shadow: inset 0px 0px 40px rgba(255,255,255,0);
     :hover {
+        box-shadow: inset 300px 0px 40px rgba(255,255,255,0.8);
+    }
+    :focus {
         box-shadow: inset 300px 0px 40px rgba(255,255,255,0.8);
     }
 `
