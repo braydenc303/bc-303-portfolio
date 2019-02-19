@@ -132,11 +132,11 @@ class Portfolio extends Component {
                 <h2>Portfolio</h2>
                 <Container>
                     <Stage className="ul">
-                        <Scene className="li" onClick="void(0)">
-                            <Project className="Movie" onClick="void(0)">
-                                <Cover className="Poster" onClick="void(0)"></Cover>
+                        <Scene className="li" onclick="void(0)">
+                            <Project className="Movie" onclick="void(0)">
+                                <Cover className="Poster" onclick="void(0)"></Cover>
                                 <a href="https://github.com/braydenc303/GitTutorial" target="top">
-                                    <Info onClick="void(0)">
+                                    <Info onclick="void(0)">
                                         <header>
                                             <h2>GitTutorial</h2>
                                             <h2>Personal Project</h2>
@@ -148,11 +148,11 @@ class Portfolio extends Component {
                                 </a>
                             </Project>
                         </Scene>
-                        <Scene className="li" onClick="void(0)">
-                            <Project className="Movie" onClick="void(0)">
-                                <Cover className="Poster" onClick="void(0)"></Cover>
+                        <Scene className="li" onclick="void(0)">
+                            <Project className="Movie" onclick="void(0)">
+                                <Cover className="Poster" onclick="void(0)"></Cover>
                                 <a href="https://braydenc303.github.io/triviaGame/" target="top">
-                                    <Info onClick="void(0)">
+                                    <Info onclick="void(0)">
                                         <header>
                                             <h2>TED Trivia</h2>
                                             <h2>Class Assignment</h2>
@@ -163,11 +163,11 @@ class Portfolio extends Component {
                                 </a>
                             </Project>
                         </Scene>
-                        <Scene className="li" onClick="void(0)">
-                            <Project className="Movie" onClick="void(0)">
-                                <Cover className="Poster" onClick="void(0)"></Cover>
+                        <Scene className="li" onclick="void(0)">
+                            <Project className="Movie" onclick="void(0)">
+                                <Cover className="Poster" onclick="void(0)"></Cover>
                                 <a href="https://memembo.herokuapp.com/" target="top">
-                                    <Info onClick="void(0)">
+                                    <Info onclick="void(0)">
                                         <header>
                                             <h2>M&#477;&#8901;mem&#8901;bo&#772;</h2>
                                             <h2>Group Project</h2>
