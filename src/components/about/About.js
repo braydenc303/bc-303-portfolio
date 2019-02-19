@@ -22,10 +22,6 @@ const Spacer = styled.div`
     height: 50px;
 `
 
-const Heading = styled.h2`
-    font-size: 1.5rem;
-    font-weight: bold;
-`
 
 class About extends Component {
 
@@ -33,7 +29,7 @@ class About extends Component {
         return (
             <Wrapper id="About">
                 <Spacer></Spacer>
-                <Heading>About</Heading>
+                <h2>About</h2>
                 <Paragraph>Capable full-stack developer who loves the problem-solving aspect of programming. 
                     Aptitude for creating experiences that are pleasing to the eye and which naturally lead users to where they want to go. 
                     Drawing on my background in service and hospitality helps me to understand my clients wants and needs while using my technical skills in

@@ -26,11 +26,6 @@ const ListI = styled.li`
     }
 `
 
-const A = styled.a`
-    text-decoration: none;
-    color: black;
-`
-
 const Name = styled.h2`
     font-weight: normal;
     align-self: center;
@@ -48,13 +43,13 @@ class Header extends Component {
         return(
             <>
                 <Lead>
-                    <A href="#Portfolio"><Name>brayden copley production llc</Name></A>
+                    <a href="#Portfolio"><Name>brayden copley production llc</Name></a>
                     <Spacer></Spacer>
                     <UList>
-                        <A href="#Portfolio"><ListI>Portfolio</ListI></A>
-                        <A href="#About"><ListI>About</ListI></A>
-                        <A href="#Skills"><ListI>Skills</ListI></A>
-                        <A href="#Contact"><ListI>Contact</ListI></A>
+                        <a href="#Portfolio"><ListI>Portfolio</ListI></a>
+                        <a href="#About"><ListI>About</ListI></a>
+                        <a href="#Skills"><ListI>Skills</ListI></a>
+                        <a href="#Contact"><ListI>Contact</ListI></a>
                     </UList>
                 </Lead>
             </>

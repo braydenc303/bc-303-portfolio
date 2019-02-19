@@ -3,34 +3,22 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
     width:100%;
-    height: 100vh;
+    min-height: 100vh;
 `
 
 const Spacer = styled.div`
     height: 50px;
 `
 
-const Heading = styled.h2`
-    font-size: 1.5rem;
-    font-weight: bold;
-`
 
 const Container = styled.div`
-    display:flex;
-    flex-wrap: wrap;
-    align-content: center;
-`
-
-const Stage = styled.ul`
-    list-style: none;
-    padding 0;
+    margin: auto;
 `
 
 const Scene = styled.li`
     width: 260px;
     height: 400px;
     margin: 30px;
-    float: left;
     perspective: 1000px;
 `
 
@@ -43,7 +31,7 @@ const Info = styled.div`
     transform: rotateY(90deg) translateZ(130px);
     border: 1px solid #B8B5B5;
     font-size: 0.75em;
-    transition: box-shadow 350ms;
+    transition: box-shadow 450ms;
     box-shadow: inset -300px 0px 40px rgba(0,0,0,0.5);
     :hover {
         box-shadow: inset 0px 0px 40px rgba(0,0,0,0);
@@ -55,7 +43,7 @@ const Project = styled.div`
     height: 400px;
     transform-style: preserve-3d;
     transform: translateZ(-130px);
-    transition: transform 350ms;
+    transition: transform 500ms;
     :hover {
         transform: rotateY(-78deg)translateZ(20px);
     }
@@ -68,7 +56,7 @@ const Project = styled.div`
         box-shadow: 0 50px 50px rgba(0,0,0,0.3);
         transform-origin: 100% 100%;
         transform: rotateX(90deg) translateX(-130px) translateY(130px);
-        transition: box-shadow 350ms;
+        transition: box-shadow 500ms;
     }
     :hover::after {
         box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
@@ -77,7 +65,6 @@ const Project = styled.div`
 
 const Cover = styled.div`
     position: absolute;
-    background-image: url(../../assets/img/gitTutorial.JPG);
     width: 260px;
     height: 400px;
     background-color: #fff;
@@ -85,60 +72,88 @@ const Cover = styled.div`
     transform: translateZ(130px);
     background-size: cover;
     background-repeat: no-repeat;
-    transition: box-shadow 350ms;
+    transition: box-shadow 500ms;
     box-shadow: inset 0px 0px 40px rgba(255,255,255,0);
     :hover {
         box-shadow: inset 300px 0px 40px rgba(255,255,255,0.8);
     }
 `
-
+const Stage = styled.ul`
+    list-style: none;
+    padding 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    ${Scene}:nth-child(1) ${Cover} {
+        background-image: url(../../assets/img/gitTutorial.JPG);
+    }
+    ${Scene}:nth-child(2) ${Cover} {
+        background-image: url(../../assets/img/trivia.JPG);
+        background-size: auto 260px; 
+        border: 1px solid grey;
+    }
+    ${Scene}:nth-child(3) ${Cover} {
+        background-image: url(../../assets/img/memembo.JPG);
+    }
+`
 
 class Portfolio extends Component {
+
+    
 
     render() {
         return (
             <Wrapper id="Portfolio">
                 <Spacer></Spacer>
-                <Heading>Portfolio</Heading>
+                <h2>Portfolio</h2>
                 <Container>
                     <Stage className="ul">
                         <Scene className="li">
                             <Project className="Movie">
                                 <Cover className="Poster"></Cover>
-                                <Info>
-                                <header>
-                                    <h1>GitTutorial</h1>
-                                    <span className="type">Personal Project</span>
-                                    <span className="purpose">Education</span>
-                                </header>
-                                <p>Merge conflicts on purpose: A Tutorial, and Best Practices For Git Workflow. This project sprung out of the need for a quick tutorial for my bootcamp. Though we touched on git, we did not cover a group workflow which made working on our group projects more difficult. I looked at a few tutorials and built one as a readme file that anyone could download and walk through.</p>
-                                </Info>
+                                <a href="https://github.com/braydenc303/GitTutorial" target="top">
+                                    <Info>
+                                        <header>
+                                            <h2>GitTutorial</h2>
+                                            <h2>Personal Project</h2>
+                                            <h3>Purpose: Education</h3>
+                                        </header>
+                                        <p>Merge conflicts on purpose: A Tutorial, and Best Practices For Git Workflow.</p> 
+                                        <p>This project sprung out of the need for a quick tutorial for my bootcamp. Though we touched on git we did not cover a group workflow, which made working on our group projects quite difficult. I looked at a few tutorials and built one as a readme file that anyone could download and walk through in their favorite code editor.</p>
+                                    </Info>
+                                </a>
                             </Project>
                         </Scene>
                         <Scene className="li">
                             <Project className="Movie">
                                 <Cover className="Poster"></Cover>
-                                <Info>
-                                <header>
-                                    <h1>GitTutorial</h1>
-                                    <span className="type">Personal Project</span>
-                                    <span className="purpose">Education</span>
-                                </header>
-                                <p>Merge conflicts on purpose: A Tutorial, and Best Practices For Git Workflow. This project sprung out of the need for a quick tutorial for my bootcamp. Though we touched on git, we did not cover a group workflow which made working on our group projects more difficult. I looked at a few tutorials and built one as a readme file that anyone could download and walk through.</p>
-                                </Info>
+                                <a href="https://braydenc303.github.io/triviaGame/" target="top">
+                                    <Info>
+                                        <header>
+                                            <h2>TED Trivia</h2>
+                                            <h2>Class Assignment</h2>
+                                            <h3>Purpose: Entertainment/Education</h3>
+                                        </header>
+                                        <p>In order to learn about event timeouts and timers, we were required to create a trivia game. We were able to choose our own theme, so I chose TED talks. I had a lot of fun on this project, and learned quite a bit.</p>
+                                    </Info>
+                                </a>
                             </Project>
                         </Scene>
                         <Scene className="li">
                             <Project className="Movie">
                                 <Cover className="Poster"></Cover>
-                                <Info>
-                                <header>
-                                    <h1>GitTutorial</h1>
-                                    <span className="type">Personal Project</span>
-                                    <span className="purpose">Education</span>
-                                </header>
-                                <p>Merge conflicts on purpose: A Tutorial, and Best Practices For Git Workflow. This project sprung out of the need for a quick tutorial for my bootcamp. Though we touched on git, we did not cover a group workflow which made working on our group projects more difficult. I looked at a few tutorials and built one as a readme file that anyone could download and walk through.</p>
-                                </Info>
+                                
+                                <a href="https://memembo.herokuapp.com/" target="top">
+                                    <Info>
+                                        <header>
+                                            <h2>M&#477;&#8901;mem&#8901;bo&#772;</h2>
+                                            <h2>Group Project</h2>
+                                            <h3>Purpose: Education</h3>
+                                            <h3>In Progress</h3>
+                                        </header>
+                                        <p>Having just been through a fast paced learning experience ourselves, my team mates and I wanted to create something that could help people learn any new skill. We created a build your own quiz game, that has three different sets of rules depending on how well you know the material, and all completely customizable.</p>
+                                    </Info>
+                                </a>
                             </Project>
                         </Scene>
                     </Stage>

@@ -13,15 +13,13 @@ const Wrapper = styled.div`
 
 const Image = styled.img`
     height: 100px;
+    :hover {
+        height: 125px;
+    }
 `
 
 const Spacer = styled.div`
     height: 50px;
-`
-
-const Heading = styled.h2`
-    font-size: 1.5rem;
-    font-weight: bold;
 `
 
 class Contact extends Component {
@@ -30,7 +28,7 @@ class Contact extends Component {
         return (
             <>
                 <Spacer id="Contact"></Spacer>
-                <Heading>Contact</Heading>
+                <h2>Contact</h2>
                 <Spacer></Spacer>
                 <Wrapper>
                     <a href="https://github.com/braydenc303" target="top"><Image src="./assets/img/GitHub-Mark-120px-plus.png" alt="github logo" /></a> 
