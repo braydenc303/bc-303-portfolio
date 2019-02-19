@@ -160,7 +160,7 @@ class Portfolio extends Component {
                 <Container>
                     <Stage className="ul">
                         <Scene className="li">
-                            <Project className="Movie" onClick={void(0)}>
+                            <Project className="Movie" onFocus={void(0)}>
                                 <Cover className="Poster"></Cover>
                                 <a href="https://github.com/braydenc303/GitTutorial" target="top">
                                     <Info>
@@ -176,7 +176,7 @@ class Portfolio extends Component {
                             </Project>
                         </Scene>
                         <Scene className="li">
-                            <Project className="Movie" onClick={void(0)}>
+                            <Project className="Movie" onFocus={void(0)}>
                                 <Cover className="Poster"></Cover>
                                 <a href="https://braydenc303.github.io/triviaGame/" target="top">
                                     <Info>
@@ -191,7 +191,7 @@ class Portfolio extends Component {
                             </Project>
                         </Scene>
                         <Scene className="li">
-                            <Project className="Movie" onClick={void(0)}>
+                            <Project className="Movie" onFocus={void(0)}>
                                 <Cover className="Poster"></Cover>
                                 <a href="https://memembo.herokuapp.com/" target="top">
                                     <Info>
@@ -201,7 +201,7 @@ class Portfolio extends Component {
                                             <h3>Purpose: Education</h3>
                                             <h3>In Progress</h3>
                                         </header>
-                                        <p>Having just been through a fast paced learning experience ourselves, my team mates and I wanted to create something that could help people learn any new skill. We created a build your own quiz game, that has three different sets of rules depending on how well you know the material, and all completely customizable.</p>
+                                        <p>Having just been through a fast paced learning experience ourselves, my teammates and I wanted to create something that could help people learn any new skill. We created a build your own quiz game, that has three different sets of rules depending on how well you know the material, and all completely customizable.</p>
                                     </Info>
                                 </a>
                             </Project>
