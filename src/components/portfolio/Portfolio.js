@@ -3,14 +3,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
     width:100%;
-    min-height: 100vh;
 `
-
-const Spacer = styled.div`
-    height: 50px;
-`
-
-
 const Container = styled.div`
     margin: auto;
 `
@@ -154,8 +147,8 @@ class Portfolio extends Component {
 
     render() {
         return (
-            <Wrapper id="Portfolio">
-                <Spacer></Spacer>
+            <Wrapper id="Portfolio" className="panel">
+                <div className="content">
                 <h2>Portfolio</h2>
                 <Container>
                     <Stage>
@@ -165,8 +158,8 @@ class Portfolio extends Component {
                                     <Cover></Cover>
                                         <Info>
                                             <header>
-                                                <h2>GitTutorial</h2>
-                                                <h2>Personal Project</h2>
+                                                <h3>GitTutorial</h3>
+                                                <h3>Personal Project</h3>
                                                 <h3>Purpose: Education</h3>
                                             </header>
                                             <p>Merge conflicts on purpose: A Tutorial, and Best Practices For Git Workflow.</p> 
@@ -181,11 +174,12 @@ class Portfolio extends Component {
                                     <Cover></Cover>
                                         <Info>
                                             <header>
-                                                <h2>TED Trivia</h2>
-                                                <h2>Class Assignment</h2>
-                                                <h3>Purpose: Entertainment/Education</h3>
+                                                <h3>TED Trivia</h3>
+                                                <h3>Class Assignment</h3>
+                                                <h3>Purpose: Entertainment/
+                                                    Education</h3>
                                             </header>
-                                            <p>In order to learn about event timeouts and timers, I created a trivia game. I chose TED talks for my theme. I had a lot of fun on this project, and learned quite a bit.</p>
+                                            <p>In order to learn about event timeouts and timers, I created a trivia game. I chose TED talks for my theme, had a lot of fun on this project, and learned quite a bit.</p>
                                         </Info>
                                 </Project>
                             </a>
@@ -196,8 +190,8 @@ class Portfolio extends Component {
                                     <Cover></Cover>
                                         <Info>
                                             <header>
-                                                <h2>M&#477;&#8901;mem&#8901;bo&#772;</h2>
-                                                <h2>Group Project</h2>
+                                                <h3>M&#477;&#8901;mem&#8901;bo&#772;</h3>
+                                                <h3>Group Project</h3>
                                                 <h3>Purpose: Education</h3>
                                                 <h3>In Progress</h3>
                                             </header>
@@ -208,6 +202,7 @@ class Portfolio extends Component {
                         </Scene>
                     </Stage>
                 </Container>
+                </div>
             </Wrapper>
         );
     }

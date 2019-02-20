@@ -12,32 +12,29 @@ const ListI = styled.li`
     text-align: left;
 `
 
-const Spacer = styled.div`
-    height: 50px;
-`
-
 
 class Skills extends Component {
 
 
     render() {
         return(
-            <div id="Skills">
-                <Spacer></Spacer>
-                <h2>Skills</h2>
-                <UList>
-                    <ListI>HTML</ListI>
-                    <ListI>CSS</ListI>
-                    <ListI>JavaScript</ListI>
-                    <ListI>Git</ListI>
-                    <ListI>Mongo</ListI>
-                    <ListI>MySQL</ListI>
-                    <ListI>Express</ListI>
-                    <ListI>React</ListI>
-                    <ListI>Node</ListI>
-                    <ListI>npm</ListI>
-                    <ListI>Yarn</ListI>
-                </UList>
+            <div id="Skills" className="panel">
+                <div className="content">
+                    <h2>Skills</h2>
+                    <UList>
+                        <ListI>HTML</ListI>
+                        <ListI>CSS</ListI>
+                        <ListI>JavaScript</ListI>
+                        <ListI>Git</ListI>
+                        <ListI>Mongo</ListI>
+                        <ListI>MySQL</ListI>
+                        <ListI>Express</ListI>
+                        <ListI>React</ListI>
+                        <ListI>Node</ListI>
+                        <ListI>npm</ListI>
+                        <ListI>Yarn</ListI>
+                    </UList>
+                </div>
             </div>
         );
     }
