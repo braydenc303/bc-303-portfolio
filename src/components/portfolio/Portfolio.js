@@ -147,8 +147,8 @@ class Portfolio extends Component {
 
     render() {
         return (
-            <Wrapper id="Portfolio" className="panel">
-                <div className="content">
+            <Wrapper id="Portfolio" className="content">
+                <div>
                 <h2>Portfolio</h2>
                 <Container>
                     <Stage>
