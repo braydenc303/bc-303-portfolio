@@ -2,12 +2,15 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 
-const Paragraph = styled.p`
+const Paragraph = styled.span`
     font-family: Arial;
-    font-size: 1.5rem;
+    font-size: 24px;
     text-align: justify;
     width: 80%;
     padding: 1rem;
+    display: inline-block;
+	padding: 10px;
+	margin: 3px 0px;
 `
 
 

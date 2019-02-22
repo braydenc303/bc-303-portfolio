@@ -12,7 +12,6 @@ a {
 h2 {
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 15px;
 }
 
 h3 {
@@ -57,17 +56,16 @@ h3 {
     font-weight: bold;
     /* padding: 15px; */
     /* font-size: 110px; */
-	padding: 1rem 0 1.5rem 0;
 	margin-top: 3.5rem;
 	color: rgba(255,255,255,0.65);
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
 }
 .content p{
-	/* font-size: 18px;
+	font-size: 14px;
 	padding: 10px;
-	line-height: 24px;
+	line-height: 1rem;
 	color: black;
 	display: inline-block;
 	padding: 10px;
-	margin: 3px 0px; */
+	margin: 3px 0px;
 }

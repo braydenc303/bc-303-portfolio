@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-    width:100%;
+    height:100vh;
+    width: 100%;
 `
 const Container = styled.div`
     margin: auto;
@@ -11,7 +12,7 @@ const Container = styled.div`
 const Scene = styled.li`
     width: 260px;
     height: 400px;
-    margin: 30px;
+    margin: 10px 30px;
     perspective: 1000px;
 `
 
