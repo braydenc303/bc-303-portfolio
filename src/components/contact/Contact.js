@@ -8,6 +8,7 @@ const Wrapper = styled.div`
     align-items: top;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-top: 25vh;
 `
 
 const Image = styled.img`
