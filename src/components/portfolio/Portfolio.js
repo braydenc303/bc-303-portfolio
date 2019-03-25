@@ -154,7 +154,7 @@ class Portfolio extends Component {
                 <Container>
                     <Stage>
                         <Scene>
-                            <a href="https://github.com/braydenc303/GitTutorial" target="top">
+                            <a href="https://github.com/braydenc303/git-tutorial" target="top">
                                 <Project>
                                     <Cover></Cover>
                                         <Info>
