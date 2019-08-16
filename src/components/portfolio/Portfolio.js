@@ -138,7 +138,7 @@ const Stage = styled.ul`
         border: 1px solid grey;
     }
     ${Scene}:nth-child(3) ${Cover} {
-        background-image: url(../../assets/img/memembo.JPG);
+        background-image: url(../../assets/img/foodi.JPG);
     }
 `
 
@@ -186,17 +186,17 @@ class Portfolio extends Component {
                             </a>
                         </Scene>
                         <Scene>
-                            <a href="https://memembo.herokuapp.com/" target="top">
+                            <a href="https://stormy-cove-41377.herokuapp.com/landing" target="top">
                                 <Project>
                                     <Cover></Cover>
                                         <Info>
                                             <header>
-                                                <h3>M&#477;&#8901;mem&#8901;bo&#772;</h3>
-                                                <h3>Group Project</h3>
-                                                <h3>Purpose: Education</h3>
+                                                <h3>Foodi</h3>
+                                                <h3>Foodi</h3>
+                                                <h3>Purpose: Personal Project</h3>
                                                 <h3>In Progress</h3>
                                             </header>
-                                            <p>Having just been through a fast paced learning experience ourselves, my teammates and I wanted to create something that could help people learn any new skill. We created a build your own quiz game, that has three different sets of rules depending on how well you know the material, and all completely customizable.</p>
+                                            <p>A MERN stack CRUD app with user authentication that allows a user to create their own tasting notes, and food diary entries. The tasting notes are used in order to keep track of anything from wine tastings to full restaurant experiences. The food diary is to be used for those who may be trying to determine the cause of a food sensitivity and can help a nutritionist to determine changes that may need to be made to a user's diet.</p>
                                         </Info>
                                 </Project>
                             </a>
