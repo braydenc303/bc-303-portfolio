@@ -186,7 +186,7 @@ class Portfolio extends Component {
                             </a>
                         </Scene>
                         <Scene>
-                            <a href="https://stormy-cove-41377.herokuapp.com/landing" target="top">
+                            <a href="https://stormy-cove-41377.herokuapp.com/login" target="top">
                                 <Project>
                                     <Cover></Cover>
                                         <Info>
