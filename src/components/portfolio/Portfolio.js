@@ -192,7 +192,6 @@ class Portfolio extends Component {
                                         <Info>
                                             <header>
                                                 <h3>Foodi</h3>
-                                                <h3>Foodi</h3>
                                                 <h3>Purpose: Personal Project</h3>
                                                 <h3>In Progress</h3>
                                             </header>
